@@ -1,0 +1,60 @@
+input[class="pro-info-like"], input[class="pro-info-notification"], input[class="pro-info-share"] {
+    display: none;
+}
+
+input[class="pro-info-like"]:checked~label>i.fas.fa-heart {
+    color: var(--red) !important;
+}
+
+input[class="pro-info-notification"]:checked~label>i.fas.fa-bell {
+    color: var(--orange) !important;
+}
+
+input[class="pro-info-share"]:checked~label>i.fas.fa-bookmark {
+    color: var(--d-indigo) !important;
+}
+
+.cus-nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cus-nav-tabs .nav-link {
+    color: var(--gray);
+    margin-bottom: -1px;
+    background: none;
+    border: 0.05rem solid transparent;
+    border-top: 0.15rem solid transparent;
+}
+
+.cus-nav-tabs .nav-link:focus{
+    border-top: 0.15rem solid var(--red);
+    isolation: isolate;
+}
+
+.cus-nav-tabs .nav-link:focus-visible {
+    outline: none;
+}
+
+.cus-nav-tabs .nav-link:hover {
+    color: var(--yellow);
+}
+
+.cus-nav-tabs .nav-link.active, .cus-nav-tabs .nav-item.show .nav-link {
+    color: var(--indigo);
+    background-color: #fff;
+    border-color: var(--red) var(--l-gray) #fff;
+}
+
+.cus-tab-pan-pro-dec p {
+    text-align: justify;
+}
+
+.cus-tab-pan-pro-dec .fa-dot-circle {
+    top: -11px;
+    left: -11px;
+}
+
+#comments .progress {
+    height: 0.1rem ;
+    width: 90%;
+}

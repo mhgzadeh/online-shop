@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Owl Carousel CSS File -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <!-- Local Style File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Online Shop | Bootstrap 5</title>
+  </head>
+
+  <body>
+    <!-- Section 1: Navbar -->
+    <section class="container-fluid custom-bg-nav">
+      <!-- Section 1.1: Top-Nav -->
+      <div class="container-md">
+        <div class="row">
+          <div class="nav d-flex justify-content-sm-between align-items-center">
+            <ul class="nav fs-7">
+              <li class="nav-item d-none d-xl-block"><a href="#" class="nav-link text-white border-end">Quality
+                  Guarantee</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white border-end">Order Tracking</a></li>
+              <li class="nav-item d-none d-xl-block"><a href="#" class="nav-link text-white border-end">Phone:
+                  +989124636466</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-light">Store Address</a></li>
+            </ul>
+            <div class="right-side-title d-none d-md-block text-warning fs-7">
+              Free Shipping - 30 Days Money Back Guarantee
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Section 1.2: Middle-Nav -->
+      <div class="container-md mt-3">
+        <div class="row d-flex justify-content-between align-items-baseline">
+          <div class="col-3 col-sm-2 col-md-3 col-lg-2">
+            <div class="dropdown">
+              <button
+                class="btn btn-warning dropdown-toggle w-100 d-flex justify-content-around align-items-center btn-shopping-list"
+                type="submit" data-bs-toggle="dropdown">
+                <i class="fas fa-cart-arrow-down fs-6 d-indigo pe-2 py-1"></i><span
+                  class="fs-7 d-none d-md-block">Shopping List</span>
+              </button>
+              <div class="dropdown-menu dropdown-shopping-list mt-2 shadow z-10">
+                <div class="dropdown-item w-100 d-flex justify-content-between align-items-center py-2 border-bottom">
+                  <ul class="col-7 fs-7">
+                    <li>Model: <strong>Iphone 12 Pro</strong></li>
+                    <li>Price: <strong>1249.69 $</strong></li>
+                    <li>Company: <strong>Apple</strong></li>
+                  </ul>
+                  <a href="#"><img class="col-3 img-thumbnail" src="./assets/img/iphone.jpg" alt="iphone-12-pro"></a>
+                  <button class="col-2 btn-close"></button>
+                </div>
+                <div class="dropdown-item w-100 d-flex justify-content-between align-items-center py-2 border-bottom">
+                  <ul class="col-7 fs-7">
+                    <li>Model: <strong>W-8621 Wooden</strong></li>
+                    <li>Price: <strong>28.99 $</strong></li>
+                    <li>Company: <strong>Beta</strong></li>
+                  </ul>
+                  <a href="#"><img class="col-3 img-thumbnail" src="./assets/img/chair.jpg" alt="iphone-12-pro"></a>
+                  <button class="col-2 btn-close"></button>
+                </div>
+                <div
+                  class="dropdown-item w-100 d-flex text-wrap justify-content-between align-items-center py-2 border-bottom">
+                  <ul class="col-7 fs-7">
+                    <li>Model: <strong>Headphone-21</strong></li>
+                    <li>Price: <strong>254.68 $</strong></li>
+                    <li>Company: <strong>Sony</strong></li>
+                  </ul>
+                  <a href="#"><img class="col-3 img-thumbnail" src="./assets/img/category11.jpg"
+                      alt="iphone-12-pro"></a>
+                  <button class="col-2 btn-close"></button>
+                </div>
+                <div class="w-100 d-flex justify-content-around align-items-baseline mt-3">
+                  <input type="submit" class="btn btn-sm btn-success w-50" value="Confirm">
+                  <input type="submit" class="btn btn-sm btn-outline-danger w-25" value="Cancel">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-md-8">
+            <form class="input-group search-nav w-100 mb-3">
+              <input type="text" class="form-control" placeholder="Search Product Name ...">
+              <button class="btn btn-outline-warning px-4 fs-7" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1.3: Full Navbar -->
+    <!-- If you want to create hero-header, 1- give the parent position-relative and delete the 
+    dropdown class from ul tag -->
+    <section class="container-fluid bg-d-indigo position-sticky top-0 full-nvbar z-9">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container-md position-relative w-100">
+          <a class="navbar-brand cus-navbar-brand-third fs-5 yellow" href="#"><strong>OShop</strong></a>
+          <input type="checkbox" id="spliter" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            class="d-none">
+          <label for="spliter" class="full-navbar-label d-lg-none py-3">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+          </label>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-automb-lg-0 third-nav align-items-baseline w-100">
+              <li class="nav-item mx-1">
+                <a class="nav-link active l-gray" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link dropdown-toggle l-gray" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown">
+                  Utensil
+                </a>
+                <ul class="dropdown-menu col-12 shadow p-2">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 fs-7">
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Washing
+                          Machine</a></li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Refrigerator</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Dish
+                          Washer</a></li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Oven</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Television</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Audio-visual
+                          Equipments</a></li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Sofa</a>
+                      </li>
+                      <li>
+                        <hr class="dorpdown-divider d-sm-none">
+                      </li>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 fs-7">
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Washing Machine 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Refrigerator 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i> Dish
+                          Washer 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i> Oven
+                          2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Television 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Audio-visual Equipments 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i> Sofa
+                          2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Washing
+                          Machine 3</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Refrigerator 3</a></li>
+                    </div>
+
+                    <div class="col-lg-3 d-flex align-items-end">
+                      <img class="w-100 d-none d-lg-block" src="./assets/img/home.png" alt="">
+                    </div>
+                  </div>
+
+
+
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle l-gray" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown">
+                  Supermarket
+                </a>
+                <ul class="dropdown-menu p-2 fs-7">
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Diary</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Flesh &
+                      Egg</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Cleaner</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle l-gray" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown">
+                  Pharmacy
+                </a>
+                <ul class="dropdown-menu p-2 fs-7">
+                  <li><a class="dropdown-item" href="#"><i
+                        class="fas fa-angle-double-right me-2 yellow"></i>Supplements</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Sanitary
+                      Mask</a></li>
+                  <li><a class="dropdown-item" href="#"><i
+                        class="fas fa-angle-double-right me-2 yellow"></i>Disinfectants</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Discounted
+                      Cosmetics</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link l-gray" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link l-gray" aria-current="page" href="#">Contact Us</a>
+              </li>
+
+              <!-- Section 1.3.1: Modal -->
+              <li class="nav-item mx-1 nav-item-sign-in">
+                <a class=" nav-link py-1 fs-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Sign In
+                  <i class="fas fa-user mx-1 d-none d-lg-inline-block"></i>
+                </a>
+                <div class="modal fade" id="exampleModal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title d-indigo fw-bold border-bottom border-3 border-warning"
+                          id="exampleModalLabel">Sign In</h5>
+                      </div>
+                      <div class="modal-body">
+                        <form class="row g-3">
+                          <div class="col-12">
+                            <div class="col-12">
+                              <label for="inputEmail4"
+                                class="form-label d-indigo border-bottom border-3 border-warning">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4"
+                                placeholder="example@company.com">
+                            </div>
+                            <div class="col-12 mt-4">
+                              <label for="inputPassword4"
+                                class="form-label d-indigo border-bottom border-3 border-warning">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <a href="#" class="mt-2 fs-8 p-1 text-danger">I have
+                                forgotten my password!</a>
+                            </div>
+                            <div class="form-check mt-3">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label fs-7" for="gridCheck">
+                                Accept All Regulations
+                              </label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary px-2 py-1"
+                          data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success px-3 py-1">Sign in</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Section 4: Slider -->
+
+    <!-- Section 4.1: Corousel -->
+    <section class="container-md mt-5">
+      <div class="row">
+        <div class="col-xl-7 mb-2">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                class="active bg-d-gray"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                class="bg-d-gray"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                class="bg-d-gray"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <a href="#"> <img src="./assets/img/b1.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption cus-carousel-caption d-indigo d-none d-md-block">
+                  <h5>Woman Fashinable Style</h5>
+                  <p>Unbeivable Offers For You</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <a href="#"><img src="./assets/img/b8.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption cus-carousel-caption d-indigo d-none d-md-block">
+                  <h5>2021 Mobile Phones</h5>
+                  <p>Samsung, Apple Or What Ever You Want</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <a href="#"><img src="./assets/img/b9.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption cus-carousel-caption d-indigo shadow d-none d-md-block">
+                  <h5>The Newest House Furniture</h5>
+                  <p>Best Offers With Free Shipping Option</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 d-none d-xl-block">
+          <div class="row">
+            <div class="col-6">
+              <a href="#"><img class="col-12" src="./assets/img/b4.jpg" alt=""></a>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <a href="#"><img class="col-12" src="./assets/img/b2.jpg" alt=""></a>
+              <a href="#"><img class="col-12" src="./assets/img/b3.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4.2: Shipping -->
+    <section class="container-fluid mt-5 bg-yellow px-4 py-0">
+      <div class="row justify-content-around">
+        <div class="col-sm-6 col-xl-3">
+          <div class="row border-end border-start border-2 align-self-center">
+            <div class="col-3 col-lg-2 align-self-center text-center">
+              <a href="#"><img class="align-items-center" src="./assets/img/shipping1.png" alt=""></a>
+            </div>
+            <div class="col-9 col-lg-10 ps-4">
+              <h5 class="fs-8 pt-2">Free Shipping</h5>
+              <p class="fs-9">Free Delivery To All Counrty</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="row border-end border-start border-2">
+            <div class="col-3 col-lg-2 align-self-center text-center">
+              <a href="#"><img class="align-items-center" src="./assets/img/shipping2.png" alt=""></a>
+            </div>
+            <div class="col-8 col-lg-9 ps-4">
+              <h5 class="fs-8 pt-2">Payment</h5>
+              <p class="fs-9">Safe & Securat Payment</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="row border-end border-start border-2">
+            <div class="col-3 col-lg-2 align-self-center text-center">
+              <a href="#"><img class="align-items-center" src="./assets/img/shipping3.png" alt=""></a>
+            </div>
+            <div class="col-9 col-lg-10 ps-4">
+              <h5 class="fs-8 pt-2">Guarantee</h5>
+              <p class="fs-9">100% Money Back Guarantee</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+          <div class="row border-end border-start border-2">
+            <div class="col-3 col-lg-2 align-self-center text-center">
+              <a href="#"><img class="align-items-center" src="./assets/img/shipping4.png" alt=""></a>
+            </div>
+            <div class="col-9 col-lg-10 ps-4">
+              <h5 class="fs-8 pt-2">24 Hours Supporting</h5>
+              <p class="fs-9">Ask Your Question</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Section 4.3: Ads -->
+    <section class="container d-none d-xl-block mt-5">
+      <div class="toast show w-75 m-auto" role="alert">
+        <div class="toast-header col-12">
+          <strong class="me-auto">Google Ad</strong>
+          <small class="text-muted">11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="col-12 toast-body">
+          <div class="row align-items-baseline">
+            <div class="col-3">
+              <a href=""><img src="./assets/img/b5.jpg" alt="" class="col-12"></a>
+            </div>
+            <div class="col-6">
+              <a href=""><img src="./assets/img/b6.jpg" alt="" class="col-12"></a>
+            </div>
+            <div class="col-3">
+              <a href=""><img src="./assets/img/b7.jpg" alt="" class="col-12"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section 5: Special offer -->
+    <section class="container-fluid bg-l-gray mt-5">
+      <!-- Section 5.1: Tab Pan Offer -->
+      <div class="container-md">
+        <div class="row">
+          <div class="col-12 nav-item mt-3">
+            <div class="row cus-sec5-title shadow p-4 rounded bg-white">
+              <span class="col-12 col-sm-6 fw-bolder indigo fs-4 mb-2 d-inline mx-100" dir="rtl">Daily Special
+                Offers</span>
+              <span id="demo" class="col-12 col-sm-6 demo-nav-item mb-2 mx-100"></span>
+            </div>
+          </div>
+          <ul class="nav nav-pills cus-s5-nav-pills mb-1 mt-5 fs-7 position-relative" id="pills-tab">
+            <li class="nav-item">
+              <button class="nav-link cus-s5-nav-link active px-2 me-1" id="pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-home" type="button">
+                Mobile & Tablet
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link px-2 me-1 fs-7" id="pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-profile" type="button">
+                Fashion
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link px-2 fs-7" id="pills-contact-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-contact" type="button">
+                Video Game
+              </button>
+            </li>
+          </ul>
+          <hr class="dropdown-divider">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home">
+              <div class="container position-relative my-2 p-0">
+                <div id="after-expire">
+                  <div id="offer-expire-text-inner-id" class="offer-expire-text-inner fs-5 d-none"></div>
+                </div>
+                <div class="row position-relative" id="offer-blur">
+                  <div class="col-lg-6 pe-3 mb-1">
+                    <div class="row bg-white cus-s5-special-offer py-3 align-items-center">
+                      <div class="col-3 col-sm-4 cus-s5-special-offer-img">
+                        <div class="p-2"><a href="#"><img class="img-fluid" src="./assets/img/s1.jpg" alt=""></a></div>
+                      </div>
+                      <div class="col-9 col-sm-8">
+                        <div class="row">
+                          <strong class="d-block col-4 fs-7">Model:</strong>
+                          <span class="d-block col-8 fs-7 text-truncate">Xiaomi Headset B-43</span>
+                          <strong class="d-block col-4 fs-7">Company:</strong>
+                          <span class="d-block col-8 fs-7 text-truncate">Xiaomi - China</span>
+                          <strong class="d-block col-4 fs-7">Rating:</strong>
+                          <span class="d-block col-8 fs-7"><i class="fas fa-star yellow"></i><i
+                              class="fa fa-star yellow"></i><i class="far fa-star yellow"></i><i
+                              class="far fa-star yellow"><i class="far fa-star yellow"></i></i></span>
+                          <hr class="mt-4 mb-2 w-75">
+                          <strong class="d-block col-4 fs-7">Price:</strong>
+                          <span class="d-block col-8 fw-bolder fs-7"><s class="red me-2 fs-7">250 $</s><span
+                              class="fs-">198.69 $</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 pe-3 mb-1">
+                    <div class="row bg-white cus-s5-special-offer py-3 align-items-center">
+                      <div class="col-3 col-sm-4 cus-s5-special-offer-img">
+                        <div class="p-1"> <a href="#"><img class="img-fluid" src="./assets/img/s6.jpg" alt=""></a></div>
+                      </div>
+                      <div class="col-9 col-sm-8">
+                        <div class="row">
+                          <strong class="d-block col-4 fs-7">Model:</strong>
+                          <span class="d-block col-8 fs-7 text-truncate">Apple ipad h-296</span>
+                          <strong class="d-block col-4 fs-7">Company:</strong>
+                          <span class="d-block col-8 fs-7 text-truncate">Apple - US</span>
+                          <strong class="d-block col-4 fs-7">Rating:</strong>
+                          <span class="d-block col-8 fs-7"><i class="fas fa-star yellow"></i><i
+                              class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i
+                              class="fas fa-star yellow"><i class="far fa-star yellow"></i></i></span>
+                          <hr class="mt-4 mb-2 w-75 ">
+                          <strong class="d-block col-4">Price:</strong>
+                          <span class="d-block col-8 fw-bolder"><s class="red me-2 fs-7">998 $</s><span
+                              class="fs-7">905.99 $</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 pe-3 mb-1">
+                    <div class="row bg-white cus-s5-special-offer py-3 align-items-center">
+                      <div class="col-3 col-sm-4 cus-s5-special-offer-img">
+                        <div class="p-1"><a href="#"><img class="img-fluid" src="./assets/img/s7.jpg" alt=""></a></div>
+                      </div>
+                      <div class="col-9 col-sm-8">
+                        <div class="row">
+                          <strong class="d-block col-4 fs-7">Model:</strong>
+                          <span class="d-block col-8 fs-7 text-truncate">Galaxy s10+</span>
+                          <strong class="d-block col-4 fs-7">Company:</strong>
+                          <span class="d-block col-8 fs-7 text-truncate">Samsung - US</span>
+                          <strong class="d-block col-4 fs-7">Rating:</strong>
+                          <span class="d-block col-8 fs-7"><i class="fas fa-star yellow"></i><i
+                              class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i
+                              class="fas fa-star yellow"><i class="fas fa-star yellow"></i></i></span>
+                          <hr class="mt-4 mb-2 w-75 ">
+                          <strong class="d-block col-4">Price:</strong>
+                          <span class="d-block col-8 fw-bolder"><s class="red me-2 fs-7">889 $</s><span
+                              class="fs-7">845.49 $</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 pe-3 mb-1">
+                    <div class="row bg-white cus-s5-special-offer py-3 align-items-center">
+                      <div class="col-3 col-sm-4 cus-s5-special-offer-img">
+                        <div class="p-1"><a href="#"><img class="img-fluid" src="./assets/img/s3.jpg" alt=""></a></div>
+                      </div>
+                      <div class="col-9 col-sm-8">
+                        <div class="row">
+                          <strong class="d-block col-4 fs-7">Model:</strong>
+                          <span class="d-block col-8 fs-7 text-truncate">Xiaomi Headset A-143</span>
+                          <strong class="d-block col-4 fs-7">Company:</strong>
+                          <span class="d-block col-8 fs-7 text-truncate">Xiaomi - China</span>
+                          <strong class="d-block col-4 fs-7">Rating:</strong>
+                          <span class="d-block col-8 fs-7"><i class="fas fa-star yellow"></i><i
+                              class="fas fa-star yellow"></i><i class="fas fa-star yellow"></i><i
+                              class="far fa-star yellow"><i class="far fa-star yellow"></i></i></span>
+                          <hr class="mt-4 mb-2 w-75 ">
+                          <strong class="d-block col-4">Price:</strong>
+                          <span class="d-block col-8 fw-bolder"><s class="red me-2 fs-7">290 $</s><span
+                              class="fs-7">219.59 $</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade p-5 text-center indigo" id="pills-profile">
+              Fashionable Clothes Not Available
+            </div>
+            <div class="tab-pane fade p-5 text-center indigo" id="pills-contact">
+              Video Games Not Available
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5.2: Owl Carousel -->
+      <section class="container-md mt-5">
+        <div class="row py-5">
+          <div class="col-12 position-relative">
+
+            <div class="owl-carousel-header col-12 mb-4">
+              <span class="d-inline-block border-bottom border-4 border-warning pb-2 pe-2 fw-bold fs-5">
+                Mobile Offers Up To
+                <span class="badge bg-red ms-2">25%</span>
+              </span>
+            </div>
+
+            <div class="owl-carousel owl-theme bg-white p-3">
+
+              <!-- <div class="item">
+                <div class="card border-0 bg-white">
+                  <div class="card-body mt-3 text-center">
+                    <p class="p-1 fs-7 yellow fw-b rounded py-3 bg-indigo w-100">Unbeivable Offers <strong class="fs-5 pt-1 yellow d-block">OShop</strong></p>
+                    <button class="btn fw-bolder btn-warning indigo mt-3 fs-8">Explore All Offers <i class="fas fa-arrow-circle-right fw-bolder"></i></button>
+                  </div>
+                </div>
+              </div> -->
+
+              <a href="#" class="d-indigo">
+                <div class="item rounded border-bottom border-4 border-warning">
+                  <div class="card d-flex">
+                    <img src="./assets/img/o1.jpg" class="card-img-top w-75 py-2 align-self-center" alt="...">
+                    <div class="card-body bg-l-white">
+                      <div class="row d-flex text-center text-sm-start p-1">
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Model:</b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Galaxy A7+</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Brand:</b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Samsung</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Price:</b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 fw-bold text-truncate"><s class="red">425 $</s> 398$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="d-indigo">
+                <div class="item rounded border-bottom border-4 border-warning">
+                  <div class="card d-flex">
+                    <img src="./assets/img/o9.jpg" class="card-img-top w-75 py-2 align-self-center" alt="...">
+                    <div class="card-body bg-l-white">
+                      <div class="row d-flex text-center text-sm-start p-1">
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Model: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Galaxy A5 2020</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>brand: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Samsung</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Price: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 fw-bold text-truncate"><s class="red">625 $</s> 551$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="d-indigo">
+                <div class="item rounded border-bottom border-4 border-warning">
+                  <div class="card d-flex">
+                    <img src="./assets/img/o10.jpg" class="card-img-top w-75 py-2 align-self-center" alt="...">
+                    <div class="card-body bg-l-white">
+                      <div class="row d-flex text-center text-sm-start p-1">
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Model: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Iphone 6</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>brand: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Apple</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Price: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 fw-bold text-truncate"><s class="red">425 $</s> 398$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="d-indigo">
+                <div class="item rounded border-bottom border-4 border-warning">
+                  <div class="card d-flex">
+                    <img src="./assets/img/o11.jpg" class="card-img-top w-75 py-2 align-self-center" alt="...">
+                    <div class="card-body bg-l-white">
+                      <div class="row d-flex text-center text-sm-start p-1">
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Model: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Z-Fold 2021</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>brand: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Samsung</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Price: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 fw-bold text-truncate"><s class="red">899 $</s> 865$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="d-indigo">
+                <div class="item rounded border-bottom border-4 border-warning">
+                  <div class="card d-flex">
+                    <img src="./assets/img/o12.jpg" class="card-img-top w-75 py-2 align-self-center" alt="...">
+                    <div class="card-body bg-l-white">
+                      <div class="row d-flex text-center text-sm-start p-1">
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Model: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Galaxy A3+</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>brand: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Samsung</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Price: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 fw-bold text-truncate"><s class="red">325 $</s> 312$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="d-indigo">
+                <div class="item rounded border-bottom border-4 border-warning">
+                  <div class="card d-flex">
+                    <img src="./assets/img/o13.jpg" class="card-img-top w-75 py-2 align-self-center" alt="...">
+                    <div class="card-body bg-l-white">
+                      <div class="row d-flex text-center text-sm-start p-1">
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Model: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Iphone X</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>brand: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Apple</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Price: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 fw-bold text-truncate"><s class="red">1100 $</s> 1084.88$
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="d-indigo">
+                <div class="item rounded border-bottom border-4 border-warning">
+                  <div class="card d-flex">
+                    <img src="./assets/img/o14.jpg" class="card-img-top w-75 py-2 align-self-center" alt="...">
+                    <div class="card-body bg-l-white">
+                      <div class="row d-flex text-center text-sm-start p-1">
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Model: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Galaxy A8+</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>brand: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 text-truncate">Samsung</div>
+                        <div class="col-12 col-sm-5 fs-8 p-0"><b>Price: </b></div>
+                        <div class="col-12 col-sm-7 fs-8 p-0 fw-bold text-truncate"><s class="red">425 $</s> 398$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="item">
+                <div class="card border-0 bg-white">
+                  <div class="card-body mt-3 text-center">
+                    <button class="btn fw-bolder indigo mt-5 display-1 w-100"><i
+                        class="fas fa-arrow-circle-right fw-bolder display-1"></i></button>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="bg-l-gray pb-1 pt-5 mt-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a class="mb-2" href="#">
+              <i class="fas fa-store-alt d-inline-block me-2 fw-bolder fs-2 indigo"></i>
+              <span class="fs-3 d-inline-block yellow fw-bolder">OShop</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 mb-3 border-bottom border-secondary pb-4">
+            <h5 class="fs-6">Information</h5>
+            <ul class="list-unstyled">
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">About Us</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Contact Us</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">New Products</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Free Shipping</a></li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 mb-3 border-bottom border-secondary pb-4">
+            <h5 class="fs-6">User Page</h5>
+            <ul class="list-unstyled">
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Sitemap</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Edit Profile</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Special Offers</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Last Order</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3 mb-3 border-bottom border-secondary pb-4">
+            <h5 class="fs-6">Contacts</h5>
+            <ul class="list-unstyled">
+              <li class="mb-1 d-flex align-items-center"><i class="far fa-envelope fs-6 me-2 d-indigo"></i><a href="#"
+                  class="d-indigo fs-7">info@oshop.com</a></li>
+              <li class="mb-3 d-flex align-items-center"><i class="fas fa-phone fs-7 me-2 d-indigo"></i><a href="#"
+                  class="d-indigo fs-7"></i> +989124636466</a></li>
+              <li class="col-12">
+                <a href="#" class=""><i class="fab fa-instagram me-2 red"></i></a>
+                <a href="#" class=""><i class="fab fa-telegram-plane me-2 d-blue"></i></a>
+                <a href="#" class=""><i class="fab fa-twitter me-2"></i> </a>
+                <a href="#" class=""><i class="fas fa-rss me-2 orange"></i></a>
+                <a href="#" class=""><i class="fab fa-facebook-f"></i></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="col-12 mt-2 text-center">
+            <li class="mb-2 fs-9 d-indigo"><i class="far fa-copyright text-muted"></i> Designed and built with <i
+                class="fas fa-heart red fs-8"></i> and <i class="fas fa-coffee yellow fs-8"></i> by <strong>Mohammad
+                HGZ</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="./assets/js/owl.carousel.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+
+</html>

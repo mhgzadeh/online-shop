@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Owl Carousel CSS File -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <!-- Local Style File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Product Page | Bootstrap 5</title>
+  </head>
+
+  <body>
+    <!-- Section 1: Navbar -->
+    <section class="container-fluid custom-bg-nav">
+      <!-- Section 1.1: Top-Nav -->
+      <div class="container-md">
+        <div class="row">
+          <div class="nav d-flex justify-content-sm-between align-items-center">
+            <ul class="nav fs-7">
+              <li class="nav-item d-none d-xl-block"><a href="#" class="nav-link text-white border-end">Quality
+                  Guarantee</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-white border-end">Order Tracking</a>
+              </li>
+              <li class="nav-item d-none d-xl-block"><a href="#" class="nav-link text-white border-end">Phone:
+                  +989124636466</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-light">Store Address</a></li>
+            </ul>
+            <div class="right-side-title d-none d-md-block text-warning fs-7">
+              Free Shipping - 30 Days Money Back Guarantee
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Section 1.2: Middle-Nav -->
+      <div class="container-md mt-3">
+        <div class="row d-flex justify-content-between align-items-baseline">
+          <div class="col-3 col-sm-2 col-md-3 col-lg-2">
+            <div class="dropdown">
+              <button
+                class="btn btn-warning dropdown-toggle w-100 d-flex justify-content-around align-items-center btn-shopping-list py-1"
+                type="submit" data-bs-toggle="dropdown">
+                <i class="fas fa-cart-arrow-down fs-6 d-indigo pe-2 py-1"></i><span
+                  class="fs-7 d-none d-md-block">Shopping List</span>
+              </button>
+              <div class="dropdown-menu dropdown-shopping-list mt-2 shadow z-10">
+                <div class="dropdown-item w-100 d-flex justify-content-between align-items-center py-2 border-bottom">
+                  <ul class="col-7 fs-7">
+                    <li>Model: <strong>Iphone 12 Pro</strong></li>
+                    <li>Price: <strong>1249.69 $</strong></li>
+                    <li>Company: <strong>Apple</strong></li>
+                  </ul>
+                  <a href="#"><img class="col-3 img-thumbnail" src="./assets/img/iphone.jpg" alt="iphone-12-pro"></a>
+                  <button class="col-2 btn-close"></button>
+                </div>
+                <div class="dropdown-item w-100 d-flex justify-content-between align-items-center py-2 border-bottom">
+                  <ul class="col-7 fs-7">
+                    <li>Model: <strong>W-8621 Wooden</strong></li>
+                    <li>Price: <strong>28.99 $</strong></li>
+                    <li>Company: <strong>Beta</strong></li>
+                  </ul>
+                  <a href="#"><img class="col-3 img-thumbnail" src="./assets/img/chair.jpg" alt="iphone-12-pro"></a>
+                  <button class="col-2 btn-close"></button>
+                </div>
+                <div
+                  class="dropdown-item w-100 d-flex text-wrap justify-content-between align-items-center py-2 border-bottom">
+                  <ul class="col-7 fs-7">
+                    <li>Model: <strong>Headphone-21</strong></li>
+                    <li>Price: <strong>254.68 $</strong></li>
+                    <li>Company: <strong>Sony</strong></li>
+                  </ul>
+                  <a href="#"><img class="col-3 img-thumbnail" src="./assets/img/category11.jpg"
+                      alt="iphone-12-pro"></a>
+                  <button class="col-2 btn-close"></button>
+                </div>
+                <div class="w-100 d-flex justify-content-around align-items-baseline mt-3">
+                  <input type="submit" class="btn btn-sm btn-success w-50" value="Confirm">
+                  <input type="submit" class="btn btn-sm btn-outline-danger w-25" value="Cancel">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-md-8">
+            <form class="input-group search-nav w-100 mb-3">
+              <input type="text" class="form-control py-1" placeholder="Search Product Name ...">
+              <button class="btn btn-outline-warning px-4 fs-7 py-1" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1.3: Full Navbar -->
+    <!-- If you want to create hero-header, 1- give the parent position-relative and delete the 
+      dropdown class from ul tag -->
+    <section class="container-fluid bg-d-indigo position-sticky top-0 full-nvbar z-9">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container-md position-relative w-100">
+          <a class="navbar-brand cus-navbar-brand-third fs-5 yellow" href="#"><strong>OShop</strong></a>
+          <input type="checkbox" id="spliter" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            class="d-none">
+          <label for="spliter" class="full-navbar-label d-lg-none py-3">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+          </label>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-automb-lg-0 third-nav align-items-baseline w-100">
+              <li class="nav-item mx-1">
+                <a class="nav-link active l-gray" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link dropdown-toggle l-gray" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown">
+                  Utensil
+                </a>
+                <ul class="dropdown-menu col-12 shadow p-2">
+                  <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4 fs-7">
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Washing
+                          Machine</a></li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Refrigerator</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Dish
+                          Washer</a></li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Oven</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Television</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Audio-visual
+                          Equipments</a></li>
+                      <li><a class="dropdown-item" href="#"><i
+                            class="fas fa-angle-double-right me-2 yellow"></i>Sofa</a>
+                      </li>
+                      <li>
+                        <hr class="dorpdown-divider d-sm-none">
+                      </li>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4 fs-7">
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Washing Machine 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Refrigerator 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i> Dish
+                          Washer 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i> Oven
+                          2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Television 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Audio-visual Equipments 2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i> Sofa
+                          2</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Washing
+                          Machine 3</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>
+                          Refrigerator 3</a></li>
+                    </div>
+
+                    <div class="col-lg-3 d-flex align-items-end">
+                      <img class="w-100 d-none d-lg-block" src="./assets/img/home.png" alt="">
+                    </div>
+                  </div>
+
+
+
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle l-gray" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown">
+                  Supermarket
+                </a>
+                <ul class="dropdown-menu p-2 fs-7">
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Diary</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Flesh &
+                      Egg</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Cleaner</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-1">
+                <a class="nav-link dropdown-toggle l-gray" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown">
+                  Pharmacy
+                </a>
+                <ul class="dropdown-menu p-2 fs-7">
+                  <li><a class="dropdown-item" href="#"><i
+                        class="fas fa-angle-double-right me-2 yellow"></i>Supplements</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Sanitary
+                      Mask</a></li>
+                  <li><a class="dropdown-item" href="#"><i
+                        class="fas fa-angle-double-right me-2 yellow"></i>Disinfectants</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-angle-double-right me-2 yellow"></i>Discounted
+                      Cosmetics</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link l-gray" aria-current="page" href="#">About Us</a>
+              </li>
+              <li class="nav-item mx-1">
+                <a class="nav-link l-gray" aria-current="page" href="#">Contact Us</a>
+              </li>
+
+              <!-- Section 1.3.1: Modal -->
+              <li class="nav-item mx-1 nav-item-sign-in">
+                <a class=" nav-link py-1 fs-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Sign In
+                  <i class="fas fa-user mx-1 d-none d-lg-inline-block"></i>
+                </a>
+                <div class="modal fade" id="exampleModal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title d-indigo fw-bold border-bottom border-3 border-warning"
+                          id="exampleModalLabel">Sign In</h5>
+                      </div>
+                      <div class="modal-body">
+                        <form class="row g-3">
+                          <div class="col-12">
+                            <div class="col-12">
+                              <label for="inputEmail4"
+                                class="form-label d-indigo border-bottom border-3 border-warning">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4"
+                                placeholder="example@company.com">
+                            </div>
+                            <div class="col-12 mt-4">
+                              <label for="inputPassword4"
+                                class="form-label d-indigo border-bottom border-3 border-warning">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <a href="#" class="mt-2 fs-8 p-1 text-danger">I have
+                                forgotten my password!</a>
+                            </div>
+                            <div class="form-check mt-3">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label fs-7" for="gridCheck">
+                                Accept All Regulations
+                              </label>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary px-2 py-1"
+                          data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success px-3 py-1">Sign in</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Section 2: Breadcrumb -->
+    <section class="container-md my-3">
+      <div class="row">
+        <div class="col-12">
+          <nav class="bg-l-yellow rounded">
+            <ol class="breadcrumb p-2 px-4">
+              <li class="breadcrumb-item"><a href="#" class="d-indigo">Home</a></li>
+              <li class="breadcrumb-item"><a href="#" class="d-indigo">Mobile</a></li>
+              <li class="breadcrumb-item fw-bold d-indigo">Headphone</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Product Information -->
+    <section class="container-md">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="col-6 offset-3 col-sm-12 offset-sm-0 mb-4">
+            <img src="./assets/img/s1.jpg" alt="Xiaomi Headphone" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-12 col-sm-8">
+          <div class="col-12 d-flex justify-content-between">
+            <h6 class="fw-bold d-indigo">Xiaomi Headset</h6>
+            <div class="pe-2">
+              <span class="like me-2">
+                <input type="checkbox" class="pro-info-like" id="pro-info-like">
+                <label for="pro-info-like"><i class="fas fa-heart l-gray fs-5"></i></label>
+              </span>
+              <span class="notofication me-2">
+                <input type="checkbox" class="pro-info-notification" id="pro-info-notification">
+                <label for="pro-info-notification"><i class="fas fa-bell l-gray fs-5"></i></label>
+              </span>
+              <span class="share me-2">
+                <input type="checkbox" class="pro-info-share" id="pro-info-share">
+                <label for="pro-info-share"><i class="fas fa-bookmark l-gray fs-5"></i></label>
+              </span>
+              <i class="fas fa-share indigo fs-4"></i>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-4 fs-7 fw-bold mb-2">Model:</div>
+            <div class="col-8 fs-7">b-53</div>
+            <div class="col-4 fs-7 fw-bold mb-2">Rating:</div>
+            <div class="col-8">
+              <i class="fas fa-star fs-6 yellow"></i>
+              <i class="fas fa-star fs-6 yellow"></i>
+              <i class="fas fa-star fs-6 yellow"></i>
+              <i class="far fa-star fs-6 yellow"></i>
+              <i class="far fa-star fs-6 yellow"></i>
+            </div>
+            <div class="col-4 fs-7 fw-bold mb-4">Price:</div>
+            <div class="col-8 fs-7">
+              <s class="fs-5 me-3 red">425$</s>
+              <span class="fs-4 fw-bold text-success">389.99</span>
+            </div>
+            <hr>
+            <div class="col-12 mb-4">
+              <h5 class="col-12 fw-bold d-indigo fs-7 px-1">Product Traits</h5>
+              <ul class="col-12 px-1">
+                <li class="col-12 fs-8"><i class="far fa-check-circle fs-8 indigo me-2"></i> High Sound Quality</li>
+                <li class="col-12 fs-8"><i class="far fa-check-circle fs-8 indigo me-2"></i> Impact Resistant</li>
+                <li class="col-12 fs-8"><i class="far fa-check-circle fs-8 indigo me-2"></i> High Purchase Value</li>
+                <li class="col-12 fs-8"><i class="far fa-check-circle fs-8 indigo me-2"></i> Wireless Connection</li>
+              </ul>
+            </div>
+            <hr>
+            <div class="row ">
+              <div class="col-4 col-lg-2 col-offset-2 btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-outline-danger border-end-0 py-1"><i
+                    class="fas fa-trash-alt fs-7"></i></button>
+                <button type="button" class="btn border-secondary border-start-0 border-end-0 py-1"><span
+                    class="fs-7">2</span></button>
+                <button type="button" class="btn btn-outline-success border-start-0 py-1"><i
+                    class="fas fa-plus fs-7"></i></button>
+              </div>
+              <div class="col-8 text-center">
+                <button class="col-8 btn btn-success">Add To Basket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Product Decleration -->
+    <section class="containerfluid mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav cus-nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#review"
+                  type="button">
+                  Review
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#general-info"
+                  type="button">
+                  General Info
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#comments" type="button">
+                  Comments
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <!-- Section 4.1: Review -->
+              <div class="tab-pane cus-tab-pan-pro-dec fade show active" id="review">
+                <div class="row mx-4">
+                  <div class="row">
+
+                    <div class="col-md-3 d-none d-md-block align-self-center text-center order-2">
+                      <img src="./assets/img/s2.jpg" alt="" class="col-md-12 col-lg-8 col-xl-6">
+                    </div>
+
+                    <div class="col-md-9 mt-5 position-relative ps-4 border-start border-2 border-warning order-1">
+                      <i class="far fa-dot-circle position-absolute fs-5 indigo"></i>
+                      <h6 class="text-capitalize fs-6">Why Xiaomi b-53 Headset?</h6>
+                      <p class="fs-8 p-2 text-align-justify">
+                        This headset is one of the leading manufacturers of mid-range headphones in the world, which has
+                        been able
+                        to find considerable popularity among its peers due to its convenient features, reasonable price
+                        and
+                        attractive design. Q8-851S is one of the famous models of this brand in the series of
+                        multi-purpose
+                        headphones around the phone, which enjoys an attractive design and at the same time considerable
+                        capability. Having several different capabilities of this product has made it an attractive tool
+                        for
+                        listening.
+                      </p>
+                    </div>
+
+                    <div class="col-md-3 d-none d-md-block align-self-center text-center order-3 ">
+                      <img src="./assets/img/s3.jpg" alt="" class="col-md-12 col-lg-8 col-xl-6">
+                    </div>
+
+                    <div class="col-md-9 mt-5 position-relative ps-4 border-start border-2 border-warning order-4">
+                      <i class="far fa-dot-circle position-absolute fs-5 indigo"></i>
+                      <h6 class="text-capitalize fs-6">For whom is beneficial?</h6>
+                      <p class="fs-8 p-2 text-align-justify">
+                        A world without sound is not an attractive place to live at all. Sounds are a big part of our
+                        lives and memories. Thanks to technology and the ability to transmit sound, this concept has
+                        become very important in human life today. From old simple phones to the most advanced mobile
+                        phones today, they all have one thing in common. But it is the quality and manner of sound
+                        transmission that distinguishes old and new instruments. Surely you also believe that hearing is
+                        one of the most loving gifts given to human beings. Modern man tried to find better ways to use
+                        this valuable ability in order to appreciate it, and so he began to make tools related to the
+                        ability to hear. From ancient musical instruments to the most advanced headphones today, all
+                        show the human effort to enjoy this extraordinary ability.
+                      </p>
+                    </div>
+
+                  </div>
+                  <div class="row">
+
+                    <div class="col-md-3 d-none d-md-block align-self-center text-center order-2">
+                      <img src="./assets/img/s1.jpg" alt="" class="col-md-12 col-lg-8 col-xl-6">
+                    </div>
+
+                    <div class="col-md-9 mt-5 position-relative ps-4 border-start border-2 border-warning order-1">
+                      <i class="far fa-dot-circle position-absolute fs-5 indigo"></i>
+                      <h6 class="text-capitalize fs-6">Product detail</h6>
+                      <p class="fs-8 p-2 text-align-justify">
+                        This headset is one of the leading manufacturers of mid-range headphones in the world, which has
+                        been able
+                        to find considerable popularity among its peers due to its convenient features, reasonable price
+                        and
+                        attractive design. Q8-851S is one of the famous models of this brand in the series of
+                        multi-purpose
+                        headphones around the phone, which enjoys an attractive design and at the same time considerable
+                        capability. Having several different capabilities of this product has made it an attractive tool
+                        for
+                        listening.
+                      </p>
+                    </div>
+
+                    <div class="col-md-3 d-none d-md-block align-self-center text-center order-3 ">
+                      <img src="./assets/img/s4.jpg" alt="" class="col-md-12 col-lg-8 col-xl-6">
+                    </div>
+
+                    <div class="col-md-9 mt-5 position-relative ps-4 border-start border-2 border-warning order-4">
+                      <i class="far fa-dot-circle position-absolute fs-5 indigo"></i>
+                      <h6 class="text-capitalize fs-6">Why this is a best choice for you?</h6>
+                      <p class="fs-8 p-2 text-align-justify">
+                        A world without sound is not an attractive place to live at all. Sounds are a big part of our
+                        lives and memories. Thanks to technology and the ability to transmit sound, this concept has
+                        become very important in human life today. From old simple phones to the most advanced mobile
+                        phones today, they all have one thing in common. But it is the quality and manner of sound
+                        transmission that distinguishes old and new instruments. Surely you also believe that hearing is
+                        one of the most loving gifts given to human beings.
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Section 4.2: General Info -->
+              <div class="tab-pane fade" id="general-info">
+                <div class="row mt-5 px-3">
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Dimensions: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">150 <i
+                      class="fas fa-times fs-9"></i> 150 <i class="fas fa-times fs-9"></i> 60 mm </div>
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Weight: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">700 gr
+                  </div>
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Connection Type: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">Wireless
+                  </div>
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Suitable for: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">Gaming,
+                    Sports, And Public Use</div>
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Connector: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">3.5mm
+                    Jack, Bluetooth</div>
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Performance range: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">Up to 10
+                    meters</div>
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Material: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">Plastic
+                  </div>
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Type of magnet: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">Neodymium
+                  </div>
+                  <div class="col-sm-3 bg-l-gray fs-9 fw-bold border-end border-4 border-white border-bottom p-1 px-2">
+                    Battery type: </div>
+                  <div class="col-sm-8 fs-9 bg-l-gray border-4 border-end border-white border-bottom p-1 px-2">
+                    Lithiumion battery</div>
+
+
+                </div>
+              </div>
+              <!-- Section 4.3: Comments -->
+              <div class="tab-pane fade" id="comments">
+                <div class="row m-1 mt-4">
+                  <div class="col-md-6 shadow p-4 mb-2">
+                    <div class="col-12 fs-8">
+                      <i class="far fa-check-circle fs-8 orange me-2"></i>Construction Quality
+                    </div>
+                    <div class="col-12 progress mt-2 ms-4">
+                      <div class="progress-bar w-75 bg-indigo"></div>
+                    </div>
+
+                    <div class="col-12 fs-8">
+                      <i class="far fa-check-circle fs-8 orange me-2 mt-2"></i>Sound Quality
+                    </div>
+                    <div class="col-12 progress mt-2 ms-4">
+                      <div class="progress-bar w-50 bg-indigo"></div>
+                    </div>
+
+                    <div class="col-12 fs-8">
+                      <i class="far fa-check-circle fs-8 orange me-2 mt-2"></i>Features & Capabilities
+                    </div>
+                    <div class="col-12 progress mt-2 ms-4">
+                      <div class="progress-bar w-75 bg-indigo"></div>
+                    </div>
+
+                    <div class="col-12 fs-8">
+                      <i class="far fa-check-circle fs-8 orange me-2 mt-2"></i>Ergonomics
+                    </div>
+                    <div class="col-12 progress mt-2 ms-4">
+                      <div class="progress-bar w-25 bg-indigo"></div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 shadow p-4 mb-2 fs-8">
+                    <div class="row align-items-baseline">
+                      <i class="fas fa-arrow-right orange col-1"></i>
+                      <span class="col-11">
+                        You can also comment on this product
+                      </span>
+                      <i class="fas fa-arrow-right orange col-1"></i>
+                      <span class="col-11">
+                        To submit a comment, you must first log in to your account.
+                      </span>
+                      <i class="fas fa-arrow-right orange col-1"></i>
+                      <span class="col-11">
+                        If you have already purchased this product from <strong>OShop</strong> , your comment will be registered as the owner of the product.
+                      </span>
+                    </div>
+                    <input type="submit" class="col-6 offset-6 col-md-3 offset-md-9 mt-3 btn btn-outline-success py-1 btn-sm fs-8 mt-5"
+                      value="Login">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-l-gray pb-1 pt-5 mt-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a class="mb-2" href="#">
+              <i class="fas fa-store-alt d-inline-block me-2 fw-bolder fs-2 indigo"></i>
+              <span class="fs-3 d-inline-block yellow fw-bolder">OShop</span>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 mb-3 border-bottom border-secondary pb-4">
+            <h5 class="fs-6">Information</h5>
+            <ul class="list-unstyled">
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">About Us</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Contact Us</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">New Products</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Free Shipping</a></li>
+            </ul>
+
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 mb-3 border-bottom border-secondary pb-4">
+            <h5 class="fs-6">User Page</h5>
+            <ul class="list-unstyled">
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Sitemap</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Edit Profile</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Special Offers</a></li>
+              <li class="mb-1"><a href="#" class="fs-7 d-indigo">Last Order</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3 mb-3 border-bottom border-secondary pb-4">
+            <h5 class="fs-6">Contacts</h5>
+            <ul class="list-unstyled">
+              <li class="mb-1 d-flex align-items-center"><i class="far fa-envelope fs-6 me-2 d-indigo"></i><a href="#"
+                  class="d-indigo fs-7">info@oshop.com</a></li>
+              <li class="mb-3 d-flex align-items-center"><i class="fas fa-phone fs-7 me-2 d-indigo"></i><a href="#"
+                  class="d-indigo fs-7"></i> +989124636466</a></li>
+              <li class="col-12">
+                <a href="#" class=""><i class="fab fa-instagram me-2 red"></i></a>
+                <a href="#" class=""><i class="fab fa-telegram-plane me-2 d-blue"></i></a>
+                <a href="#" class=""><i class="fab fa-twitter me-2"></i> </a>
+                <a href="#" class=""><i class="fas fa-rss me-2 orange"></i></a>
+                <a href="#" class=""><i class="fab fa-facebook-f"></i></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="col-12 mt-2 text-center">
+            <li class="mb-2 fs-9 d-indigo"><i class="far fa-copyright text-muted"></i> Designed and built with <i
+                class="fas fa-heart red fs-8"></i> and <i class="fas fa-coffee yellow fs-8"></i> by <strong>Mohammad
+                HGZ</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="./assets/js/owl.carousel.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+
+</html>
